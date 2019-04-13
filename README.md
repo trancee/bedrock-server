@@ -12,7 +12,7 @@ Here is a `docker run` command that will do that, assuming you have a `worlds` d
         -v '/minecraft/server.properties:/bedrock-server/server.properties'\
         --network host\
         --restart=always\
-        nguyer/bedrock-server
+        stanvx/bedrock-server
 
 If you wanted to use custom resource packs, a whitelist, or other things, you could also mount those paths as well. Separating the content from the sever executable means that you can safely destroy your Docker container without losing your world. This will come in handy when there are updates to the server app, and you want to redeploy the container.
 
